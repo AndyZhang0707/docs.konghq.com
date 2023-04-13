@@ -1,0 +1,15 @@
+name: apig-request-transformer
+config:
+  httpMethod: POST
+  backendContentType: application/json
+  requestPath: /requestPath/[pageId]/[userId]
+  backendPath: /servicePath/[pageId]/[userId]
+  pathParams:
+    - pageId
+    - userId
+  replace:
+    - "head:h1;query:param1"
+    - "path:pageId;query:param2"
+  add:
+    - "head:h1:v1"
+    - "query:param1:value1"

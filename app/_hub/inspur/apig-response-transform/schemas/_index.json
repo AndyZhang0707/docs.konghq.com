@@ -32,7 +32,6 @@
               "type": "string",
               "required": true,
               "default": "xml",
-              "examples": ["xml"],
               "description": "Describe the format of the response format."
             }
           }

@@ -31,28 +31,24 @@
             "httpMethod": {
               "type": "string",
               "required": true,
-              "examples": ["POST"],
               "description": "Changes the HTTP method for the upstream request."
             }
           },
           {
             "backendContentType": {
               "type": "string",
-              "examples": ["application/json"],
               "description": "Changes Content-Type for the upstream request."
             }
           },
           {
             "requestPath": {
               "type": "string",
-              "examples": ["/requestPath/[pageId]/[userId]"],
               "description": "It is used with [config.pathParams] to extract values from the request URI."
             }
           },
           {
             "backendPath": {
               "type": "string",
-              "examples": ["/servicePath/[pageId]/[userId]"],
               "description": "Updates the the path part of the upstream request URI with values."
             }
           },
@@ -63,7 +59,6 @@
                 "type": "string"
               },
               "required": "semi",
-              "examples": [["pageId", "userId"]],
               "description": "List of parameters' names of the request URI."
             }
           },
@@ -73,7 +68,6 @@
               "elements": {
                 "type": "string"
               },
-              "examples": [["head:h1;query:param1", "path:pageId;query:param2"]],
               "description": "List of parameter mappings. Replace its old value with the new one at different locations."
             }
           },
@@ -83,7 +77,6 @@
               "elements": {
                 "type": "string"
               },
-              "examples": [["head:h1:v1", "query:param1:value1"]],
               "description": "List of constant parameters. Set a new header or a new querystring with the given value."
             }
           }

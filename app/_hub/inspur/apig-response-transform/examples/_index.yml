@@ -1,0 +1,3 @@
+name: apig-response-transform
+config:
+  format: xml
